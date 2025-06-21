@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Lottery </h1>
+    <div class="container">
+        <div class="lights"></div>
+        <div>
+            <input id="display-el" type="text" placeholder="Enter Your name here" required>
+        </div>
+`<div class="bulb" style="top: 36%; left: 50%; transform: translate(-50%, -50%); animation-delay: 0s;"></div>
+  <div class="bulb" style="top: 20%; left: 85%; transform: translate(-50%, -50%); animation-delay: 0.1s;"></div>
+  <div class="bulb" style="top: 50%; left: 100%; transform: translate(-50%, -50%); animation-delay: 0.2s;"></div>
+  <div class="bulb" style="top: 80%; left: 85%; transform: translate(-50%, -50%); animation-delay: 0.3s;"></div>
+  <div class="bulb" style="top: 40%; left: 20%; transform: translate(-50%, -50%); animation-delay: 0.4s;"></div>
+  <div class="bulb" style="top: 80%; left: 15%; transform: translate(-50%, -50%); animation-delay: 0.5s;"></div>
+  <div class="bulb" style="top: 55%; left: 75%; transform: translate(-50%, -50%); animation-delay: 0.6s;"></div>
+  <div class="bulb" style="top: 20%; left: 15%; transform: translate(-50%, -50%); animation-delay: 0.7s;"></div>
+        <p>select your ticket you bet on:</p>
+        <div id="buttons">
+                <button class="number-btn">★1★</button>
+                <button class="number-btn">★2★</button>
+                <button class="number-btn">★3★</button>
+                <button class="number-btn">★4★</button>
+                <button class="number-btn">★5★</button>
+        </div>
+        <fieldset>
+            <legend>Terms of policy</legend>
+            <label for="agreement" style="display: block;">If you lost your all money we wont be responsible for this spend your money wisely.</label>
+            <label class="custom-checkbox">
+            <input type="checkbox" id="policy-checkbox" />
+            <span class="checkmark"></span>
+            I agree to the terms and conditions
+</label>
+        </fieldset>
+    </div>
+    <div id="ticket">
+    </div>
+    <div>
+        <button onclick="pickWinner()" class="winner">see winner</button>
+
+        <ul id="player-list">
+
+        </ul>
+    </div>
+    <div><p id="seewinner" class="jeet"></p></div>
+    <script src="another.js"></script>
+</body>
+</html>
